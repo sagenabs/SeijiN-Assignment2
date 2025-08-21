@@ -2,10 +2,10 @@
 
 IMPORTANT: Once you've cloned this to your forked repository, ensure that you continuously update this document as you complete each task to demonstrate your ongoing progress.
 
-Please include your shared repository link here:
+Please include your shared repository link here: https://github.com/sagenabs/SeijiN-Assignment2
 
 Example:
-Choiru's shared repository: https://github.com/choiruzain-latrobe/Assignment2.git
+Choiru's shared repository: 
 
 
 Make sure for **your case it is in Private**
@@ -179,5 +179,10 @@ X-Powered-By: Express
 </html>
 
 ```
+## Task 1 - USER INTERFACE CHANGES 
+# 1.1
+
+
+
 
 ### Phone API
