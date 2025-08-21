@@ -180,7 +180,36 @@ X-Powered-By: Express
 
 ```
 ## Task 1 - USER INTERFACE CHANGES 
-# 1.1
+### 1.1
+-Accessed frontend/src/components/Contact.js
+- Line to update: <button className='button red' onClick={doDelete}>Delete </button>
+- Updated to: <button className='button red' onClick={doDelete}>Delete Contact</button>
+<img width="423" height="246" alt="image" src="https://github.com/user-attachments/assets/e656f09f-edd5-419c-a702-ace1716a236a" />
+
+### 1.2
+- Accessed frontend/src/components/NewPhone.js
+- Line to update <button className='button green' type='submit'> Add </button>
+- Updated Line to Dynamic name assignment: <button className='button green' type='submit'> Add {contact.name}'s Phone</button>
+<img width="500" height="168" alt="image" src="https://github.com/user-attachments/assets/3bd3ac46-78ac-4161-92fa-b42b87e8a6c3" />
+
+### 1.3
+- Accessed frontend/src/components/NewContact.js
+- Line to replace: <input type='text' placeholder='Name' onChange={(e) => setName(e.target.value)} value={name}/>
+- Replaced with:
+  <label>
+ Type:
+  <select value={name} onChange={(e) => setName(e.target.value)}>
+    <option value="">Select Contact Type</option>
+    <option value="Home">Home</option>
+    <option value="Work">Work</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Others">Others</option>
+  </select>
+</label>
+
+
+
+### 1.4
 
 
 
