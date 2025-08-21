@@ -122,6 +122,29 @@ X-Powered-By: Express
 3. Show/create the API commmand to delete the contacts (DELETE)
 
 ```bash
+vboxuser@CSE5006:~/Desktop/SeijiN-Assignment2$ http delete http://localhost/api/contacts
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: http://localhost:3000
+Connection: keep-alive
+Content-Length: 154
+Content-Security-Policy: default-src 'none'
+Content-Type: text/html; charset=utf-8
+Date: Thu, 21 Aug 2025 10:31:22 GMT
+Server: nginx/1.25.1
+Vary: Origin
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot DELETE /api/contacts</pre>
+</body>
+</html>
 
 
 
@@ -132,6 +155,28 @@ X-Powered-By: Express
 4. Show/create the API command to edit the contacts (PUT)
 ```
 http get http://localhost/api/contacts/1/phones
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: http://localhost:3000
+Connection: keep-alive
+Content-Length: 160
+Content-Security-Policy: default-src 'none'
+Content-Type: text/html; charset=utf-8
+Date: Thu, 21 Aug 2025 10:33:36 GMT
+Server: nginx/1.25.1
+Vary: Origin
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot PUT /api/contacts/1/phones</pre>
+</body>
+</html>
 
 ```
 
