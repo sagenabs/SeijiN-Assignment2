@@ -190,7 +190,8 @@ X-Powered-By: Express
 - Accessed frontend/src/components/NewPhone.js
 - Line to update <button className='button green' type='submit'> Add </button>
 - Updated Line to Dynamic name assignment: <button className='button green' type='submit'> Add {contact.name}'s Phone</button>
-<img width="500" height="168" alt="image" src="https://github.com/user-attachments/assets/3bd3ac46-78ac-4161-92fa-b42b87e8a6c3" />
+<img width="543" height="162" alt="image" src="https://github.com/user-attachments/assets/695bf0b2-7b99-40a8-9baf-d3aae62254c4" />
+
 
 ### 1.3
 - Accessed frontend/src/components/NewContact.js
