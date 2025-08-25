@@ -194,23 +194,23 @@ X-Powered-By: Express
 
 
 ### 1.3
-- Accessed frontend/src/components/NewContact.js
+- Accessed frontend/src/components/NewPhone.js
 - Line to replace: <input type='text' placeholder='Name' onChange={(e) => setName(e.target.value)} value={name}/>
 - Replaced with:
-  <label>
- Type:
+
   <select value={name} onChange={(e) => setName(e.target.value)}>
-    <option value="">Select Contact Type</option>
-    <option value="Home">Home</option>
+        <option value="Home">Home</option>
     <option value="Work">Work</option>
     <option value="Mobile">Mobile</option>
     <option value="Others">Others</option>
   </select>
-</label>
-
-
+<img width="435" height="169" alt="image" src="https://github.com/user-attachments/assets/a599afed-99d5-4e58-a78e-54be8cd5f8db" />
 
 ### 1.4
+- Accessed frontend/src/components/PhoneList.js
+- Line to replace: <th>Name</th>
+- Replaced with: <th>Phone Type</th>
+<img width="444" height="166" alt="image" src="https://github.com/user-attachments/assets/ae8894bf-5305-41e0-819d-0802a6807e33" />
 
 
 
