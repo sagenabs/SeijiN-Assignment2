@@ -212,6 +212,31 @@ X-Powered-By: Express
 - Replaced with: <th>Phone Type</th>
 <img width="444" height="166" alt="image" src="https://github.com/user-attachments/assets/ae8894bf-5305-41e0-819d-0802a6807e33" />
 
+## Task 2
+### 2.1
+<img width="775" height="387" alt="image" src="https://github.com/user-attachments/assets/ab3ee265-9ba2-4f75-9cd6-7caff497ce34" />
+
+### 2.2
+<img width="915" height="336" alt="image" src="https://github.com/user-attachments/assets/d22d5d7f-7fe1-4155-9771-ccac6266ee40" />
+
+### 2.3
+<img width="823" height="281" alt="image" src="https://github.com/user-attachments/assets/1f7c83a9-ae01-424d-a92d-68a8f5f3a580" />
+
+### 2.4
+<img width="950" height="277" alt="image" src="https://github.com/user-attachments/assets/1ee06282-d583-4197-aa6b-a0c6f657b8b8" />
+
+### 2.5
+<img width="791" height="338" alt="image" src="https://github.com/user-attachments/assets/272c0a79-c499-49bf-bd3b-5e27e1ce222b" />
+
+### 2.6
+<img width="1203" height="370" alt="image" src="https://github.com/user-attachments/assets/1606b26f-2cff-43ef-988b-eba9a9b0d7e6" />
+
+### 2.7
+<img width="905" height="281" alt="image" src="https://github.com/user-attachments/assets/579f9b65-cfe1-43fe-ace4-37a541f223e5" />
+
+### 2.8
+<img width="1228" height="299" alt="image" src="https://github.com/user-attachments/assets/c3bc5c26-2927-4ef2-9827-6248321c20f4" />
+
 
 
 
