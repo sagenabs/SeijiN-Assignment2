@@ -237,6 +237,48 @@ X-Powered-By: Express
 ### 2.8
 <img width="1228" height="299" alt="image" src="https://github.com/user-attachments/assets/c3bc5c26-2927-4ef2-9827-6248321c20f4" />
 
+## Task 3
+### 3.1
+- Accessed api/models/contact.model.js
+- Line to update: const Contact = sequelize.define("contact", {...
+- Add: address: { type: Sequelize.STRING}
+- Upon testing, constraints were found in DB as it seemed to be orphaned
+  Encountered PostgreSQL sequence conflict with `contacts_id_seq` due to orphaned metadata.
+- Verified that no other relations exist in the DB, confirming the sequence was safe to drop.
+- Dropped sequence manually via `DROP SEQUENCE contacts_id_seq;` inside the DB container.
+- 'Address' feature did not exist in Contacts table
+- Manually inputted by accessing postgresql and typing: ALTER TABLE contacts ADD COLUMN address character varying(255);
+
+
+### 3.2
+- Accessed api/models/phone.model.js
+- Line to update: const Phone = sequelize.define("phone", {...
+- Add: phone_type: {type: Sequelize.STRING},
+- Replace 'number' to 'phone_number'
+- Remove name: { type: Sequelize.STRING} , to avoid redundancy in Contact
+  
+### 3.3
+- Accessed frontend/src/components/NewContact.js
+- Line to update: function NewContact(props) {...
+- Add const [address, setAddress] = useState('');
+- Add ', address' to body: JSON.stringify({...
+- Add setAddress(''); to if (data.id) {
+- Add <input type='text' placeholder='Address' onChange={(e) => setAddress(e.target.value)} value={address}/> to return (...
+
+### 3.4
+- Updated phone.controller.js `create` function to accept `phone_type` and `phone_number`:
+  const phone = {
+    phone_type: req.body.phone_type,
+    phone_number: req.body.phone_number,
+    contactId: req.params.contactId
+  };
+- Updated contact.controller.js `create` function to accept `address`:
+  const contact = {
+    name: req.body.name,
+    address: req.body.address
+  };
+
+3.4.1 – Show Contact  
 
 
 
