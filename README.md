@@ -277,29 +277,16 @@ X-Powered-By: Express
   PostgreSQL DB: <img width="1008" height="217" alt="image" src="https://github.com/user-attachments/assets/241b8218-c8cc-4a94-b870-a59bd2c43a8a" />
   
 ### 3.4
-- Updated phone.controller.js `create` function to accept `phone_type` and `phone_number`:
-  const phone = {
-    phone_type: req.body.phone_type,
-    phone_number: req.body.phone_number,
-    contactId: req.params.contactId
-  };
-- Updated contact.controller.js `create` function to accept `address`:
-  const contact = {
-    name: req.body.name,
-    address: req.body.address
-  };
-
-3.4 
-### POST Contact  
+#### POST Contact  
 <img width="1225" height="346" alt="image" src="https://github.com/user-attachments/assets/961e053f-80ca-482b-853f-0251a888aa71" />
 <img width="437" height="293" alt="image" src="https://github.com/user-attachments/assets/3a140f23-b743-42ac-8e25-d7e6c6dbfe65" />
-### PUT Contact
+#### PUT Contact
 <img width="1280" height="283" alt="image" src="https://github.com/user-attachments/assets/108978f2-c9fe-4c08-b36a-2fd81bb589a5" />
 <img width="796" height="348" alt="image" src="https://github.com/user-attachments/assets/8c923db1-c81a-43f8-be00-e1901d8a04b1" />
 <img width="448" height="250" alt="image" src="https://github.com/user-attachments/assets/56978f37-9051-4238-b232-79ed2557c000" />
-### DELETE Contact
+#### DELETE Contact
 <img width="818" height="279" alt="image" src="https://github.com/user-attachments/assets/4ab88574-66ca-47f3-a95d-005766bcdb8f" />
-### GET Contact
+#### GET Contact
 <img width="787" height="246" alt="image" src="https://github.com/user-attachments/assets/ba6c80b1-a264-44c5-bb8d-1ff0eb68443c" />
 
 #### POST Phone
@@ -311,6 +298,55 @@ X-Powered-By: Express
 <img width="877" height="385" alt="image" src="https://github.com/user-attachments/assets/5cc575e5-1adb-4395-bdc0-4cae184090db" />
 #### DELETE Phone
 <img width="894" height="277" alt="image" src="https://github.com/user-attachments/assets/c721f738-541f-47d6-97c2-099959ed4018" />
+
+
+## Task 4
+### 4.1
+-  Create the companies model - api/models/company.model.js
+-  Add db.sequelize in index.js db.companies = require("./company.model.js")(sequelize, Sequelize);
+-  Create companies table in Postgresql: CREATE TABLE companies (
+  company_id SERIAL PRIMARY KEY,
+  company_name VARCHAR(255),
+  company_address VARCHAR(255),
+  contact_id INTEGER REFERENCES contacts(id),
+  "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL,
+  "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL);
+<img width="749" height="81" alt="image" src="https://github.com/user-attachments/assets/7b6d957a-54cf-44b6-84d1-a630a4f3ad40" />
+
+### 4.2
+#### POST company
+
+<img width="1634" height="749" alt="image" src="https://github.com/user-attachments/assets/b3f7005d-c9bd-412a-9f7b-af04e4ceae9f" />
+
+#### PUT company
+
+<img width="1501" height="278" alt="image" src="https://github.com/user-attachments/assets/a4badd05-522b-4cc1-8aed-e40973a708e0" />
+
+#### GET company
+
+<img width="779" height="403" alt="image" src="https://github.com/user-attachments/assets/330a6cf8-41e9-4d86-98f3-83e7bb228cda" />
+
+#### DELETE company
+
+<img width="823" height="279" alt="image" src="https://github.com/user-attachments/assets/5ef0d896-2846-4efc-a403-38455b352143" />
+
+## Task 5
+### 5.1
+- Created CompanyList.js for displaying companies
+- Created NewCompany.js for adding companies  
+- Created Company.js with inline editing and delete functionality
+- Integrated company management into main App.js
+### 5.2
+<img width="601" height="189" alt="image" src="https://github.com/user-attachments/assets/4a66a421-1299-44d1-92ba-0b62ff7be3eb" />
+<img width="1077" height="102" alt="image" src="https://github.com/user-attachments/assets/b85b4375-37f5-42e4-842b-eade87b9bba8" />
+<img width="783" height="409" alt="image" src="https://github.com/user-attachments/assets/01db7bc5-c1fc-45b1-9894-2d74a223ed2b" />
+
+### 5.3
+README is this one seen throughout!
+  
+
+
+
 
 
 
