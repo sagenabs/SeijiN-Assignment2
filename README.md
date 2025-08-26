@@ -255,7 +255,13 @@ X-Powered-By: Express
 - Line to update: const Phone = sequelize.define("phone", {...
 - Add: phone_type: {type: Sequelize.STRING},
 - Replace 'number' to 'phone_number'
-- Remove name: { type: Sequelize.STRING} , to avoid redundancy in Contact
+- Add and renamed database columns to match task requirements:
+  - `ALTER TABLE phones ADD COLUMN "phoneType" TO phone_type;`
+  - `ALTER TABLE phones RENAME COLUMN "number" TO phone_number;`
+- Updated and added api/models/phone.model.js to use matching name format:
+  - Add  `phone_type`  
+  - Update `number` → `phone_number`
+- Updated api/controllers/phone.controller.js to use matching name format
   
 ### 3.3
 - Accessed frontend/src/components/NewContact.js
@@ -264,7 +270,12 @@ X-Powered-By: Express
 - Add ', address' to body: JSON.stringify({...
 - Add setAddress(''); to if (data.id) {
 - Add <input type='text' placeholder='Address' onChange={(e) => setAddress(e.target.value)} value={address}/> to return (...
-
+- Accessed frontend/src/components/NewPhone.js
+- Updated NewPhone.js to send phone_number and phone_type to match backend
+  Front end: <img width="463" height="400" alt="image" src="https://github.com/user-attachments/assets/12b30547-1d4b-404d-87d9-a0e636001379" />
+  Back end: <img width="765" height="373" alt="image" src="https://github.com/user-attachments/assets/5f2ac304-f15a-4644-a494-8ce9e03bfe56" />
+  PostgreSQL DB: <img width="1008" height="217" alt="image" src="https://github.com/user-attachments/assets/241b8218-c8cc-4a94-b870-a59bd2c43a8a" />
+  
 ### 3.4
 - Updated phone.controller.js `create` function to accept `phone_type` and `phone_number`:
   const phone = {
