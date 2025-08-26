@@ -289,7 +289,37 @@ X-Powered-By: Express
     address: req.body.address
   };
 
-3.4.1 – Show Contact  
+3.4 
+### POST Contact  
+<img width="1225" height="346" alt="image" src="https://github.com/user-attachments/assets/961e053f-80ca-482b-853f-0251a888aa71" />
+<img width="437" height="293" alt="image" src="https://github.com/user-attachments/assets/3a140f23-b743-42ac-8e25-d7e6c6dbfe65" />
+### PUT Contact
+<img width="1280" height="283" alt="image" src="https://github.com/user-attachments/assets/108978f2-c9fe-4c08-b36a-2fd81bb589a5" />
+<img width="796" height="348" alt="image" src="https://github.com/user-attachments/assets/8c923db1-c81a-43f8-be00-e1901d8a04b1" />
+<img width="448" height="250" alt="image" src="https://github.com/user-attachments/assets/56978f37-9051-4238-b232-79ed2557c000" />
+### DELETE Contact
+<img width="818" height="279" alt="image" src="https://github.com/user-attachments/assets/4ab88574-66ca-47f3-a95d-005766bcdb8f" />
+### GET Contact
+<img width="787" height="246" alt="image" src="https://github.com/user-attachments/assets/ba6c80b1-a264-44c5-bb8d-1ff0eb68443c" />
+
+#### POST Phone
+<img width="1254" height="351" alt="image" src="https://github.com/user-attachments/assets/0269dbd2-9ed8-43c8-97e0-d50307a226c9" />
+<img width="1293" height="387" alt="image" src="https://github.com/user-attachments/assets/80f2b496-ad5a-411f-aeba-941bbe9b4d34" />
+#### PUT Phone
+<img width="1283" height="280" alt="image" src="https://github.com/user-attachments/assets/551da152-787b-439a-9884-e3647d57f571" />
+#### GET Phone
+<img width="877" height="385" alt="image" src="https://github.com/user-attachments/assets/5cc575e5-1adb-4395-bdc0-4cae184090db" />
+#### DELETE Phone
+<img width="894" height="277" alt="image" src="https://github.com/user-attachments/assets/c721f738-541f-47d6-97c2-099959ed4018" />
+
+
+
+
+
+
+
+
+
 
 
 
