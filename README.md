@@ -334,17 +334,24 @@ X-Powered-By: Express
 
 <img width="1634" height="749" alt="image" src="https://github.com/user-attachments/assets/b3f7005d-c9bd-412a-9f7b-af04e4ceae9f" />
 
-#### PUT company
+
+*PUT company*
+
 
 <img width="1501" height="278" alt="image" src="https://github.com/user-attachments/assets/a4badd05-522b-4cc1-8aed-e40973a708e0" />
 
-#### GET company
+
+*GET company*
+
 
 <img width="779" height="403" alt="image" src="https://github.com/user-attachments/assets/330a6cf8-41e9-4d86-98f3-83e7bb228cda" />
 
-#### DELETE company
+
+*DELETE company*
+
 
 <img width="823" height="279" alt="image" src="https://github.com/user-attachments/assets/5ef0d896-2846-4efc-a403-38455b352143" />
+
 
 ## Task 5
 ### 5.1
