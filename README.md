@@ -373,7 +373,8 @@ X-Powered-By: Express
 - Created CompanyList.js for displaying companies
 - Created NewCompany.js for adding companies  
 - Created Company.js with inline editing and delete functionality
-- Integrated company management into main App.js
+- Creation format guided by existing tables PhoneList.js, NewPhone.js, Phone.js and etc.
+- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)"
   
 ### 5.2
 
