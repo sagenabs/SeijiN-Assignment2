@@ -293,39 +293,39 @@ X-Powered-By: Express
   
   
 ### 3.4
-#### POST Contact  
+#### POST Contact:  
 <img width="1225" height="346" alt="image" src="https://github.com/user-attachments/assets/961e053f-80ca-482b-853f-0251a888aa71" />
 <img width="437" height="293" alt="image" src="https://github.com/user-attachments/assets/3a140f23-b743-42ac-8e25-d7e6c6dbfe65" />
 
-*PUT Contact*
+*PUT Contact:*
   
 <img width="1280" height="283" alt="image" src="https://github.com/user-attachments/assets/108978f2-c9fe-4c08-b36a-2fd81bb589a5" />
 <img width="796" height="348" alt="image" src="https://github.com/user-attachments/assets/8c923db1-c81a-43f8-be00-e1901d8a04b1" />
 <img width="448" height="250" alt="image" src="https://github.com/user-attachments/assets/56978f37-9051-4238-b232-79ed2557c000" />
 
-*DELETE Contact*
+*DELETE Contact:*
 
 <img width="818" height="279" alt="image" src="https://github.com/user-attachments/assets/4ab88574-66ca-47f3-a95d-005766bcdb8f" />
 
-*GET Contact*
+*GET Contact:*
 
 <img width="787" height="246" alt="image" src="https://github.com/user-attachments/assets/ba6c80b1-a264-44c5-bb8d-1ff0eb68443c" />
 
-*POST Phone*
+*POST Phone:*
 
 <img width="1254" height="351" alt="image" src="https://github.com/user-attachments/assets/0269dbd2-9ed8-43c8-97e0-d50307a226c9" />
 <img width="1293" height="387" alt="image" src="https://github.com/user-attachments/assets/80f2b496-ad5a-411f-aeba-941bbe9b4d34" />
 
 
-*PUT Phone*
+*PUT Phone:*
 
 <img width="1283" height="280" alt="image" src="https://github.com/user-attachments/assets/551da152-787b-439a-9884-e3647d57f571" />
 
-*GET Phone*
+*GET Phone:*
 
 <img width="877" height="385" alt="image" src="https://github.com/user-attachments/assets/5cc575e5-1adb-4395-bdc0-4cae184090db" />
 
-*DELETE Phone*
+*DELETE Phone:*
 
 <img width="894" height="277" alt="image" src="https://github.com/user-attachments/assets/c721f738-541f-47d6-97c2-099959ed4018" />
 
@@ -333,7 +333,7 @@ X-Powered-By: Express
 ## Task 4
 ### 4.1
 -  Create the companies model - api/models/company.model.js
--  Add db.sequelize in index.js db.companies = require("./company.model.js")(sequelize, Sequelize);
+-  Add db.sequelize in index.js db.companies = require("./company.model.js")(sequelize, Sequelize); This connects to the set ups DB and endures data persistence in the backend.
 -  Create companies table in Postgresql: CREATE TABLE companies (
   company_id SERIAL PRIMARY KEY,
   company_name VARCHAR(255),
@@ -341,10 +341,11 @@ X-Powered-By: Express
   contact_id INTEGER REFERENCES contacts(id),
   "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL,
   "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL);
+ Creating this SQL table as a new feature of an entry and integrating it in the index.js allows new entries in the DB both front and backend.
 <img width="749" height="81" alt="image" src="https://github.com/user-attachments/assets/7b6d957a-54cf-44b6-84d1-a630a4f3ad40" />
 
 ### 4.2
-#### POST company
+ *POST company*
 
 <img width="1634" height="749" alt="image" src="https://github.com/user-attachments/assets/b3f7005d-c9bd-412a-9f7b-af04e4ceae9f" />
 
@@ -373,7 +374,9 @@ X-Powered-By: Express
 - Created NewCompany.js for adding companies  
 - Created Company.js with inline editing and delete functionality
 - Integrated company management into main App.js
+  
 ### 5.2
+
 <img width="601" height="189" alt="image" src="https://github.com/user-attachments/assets/4a66a421-1299-44d1-92ba-0b62ff7be3eb" />
 <img width="1077" height="102" alt="image" src="https://github.com/user-attachments/assets/b85b4375-37f5-42e4-842b-eade87b9bba8" />
 <img width="783" height="409" alt="image" src="https://github.com/user-attachments/assets/01db7bc5-c1fc-45b1-9894-2d74a223ed2b" />
