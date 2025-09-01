@@ -341,7 +341,7 @@ X-Powered-By: Express
   contact_id INTEGER REFERENCES contacts(id),
   "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL,
   "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL);
- Creating this SQL table as a new feature of an entry and integrating it in the index.js allows new entries in the DB both front and backend.
+- Creating this SQL table as a new feature of an entry and integrating it in the index.js allows new entries in the DB both front and backend.
 <img width="749" height="81" alt="image" src="https://github.com/user-attachments/assets/7b6d957a-54cf-44b6-84d1-a630a4f3ad40" />
 
 ### 4.2
