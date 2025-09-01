@@ -333,7 +333,7 @@ X-Powered-By: Express
 ## Task 4
 ### 4.1
 -  Create the companies model - api/models/company.model.js
--  Add db.sequelize in index.js db.companies = require("./company.model.js")(sequelize, Sequelize); This connects to the set ups DB and endures data persistence in the backend.
+-  Add db.sequelize in index.js db.companies = require("./company.model.js")(sequelize, Sequelize); This connects to the set ups DB and ensures data persistence in the backend.
 -  Create companies table in Postgresql: CREATE TABLE companies (
   company_id SERIAL PRIMARY KEY,
   company_name VARCHAR(255),
@@ -373,14 +373,17 @@ X-Powered-By: Express
 - Created CompanyList.js for displaying companies
 - Created NewCompany.js for adding companies  
 - Created Company.js with inline editing and delete functionality
-- Creation format guided by existing tables PhoneList.js, NewPhone.js, Phone.js and etc.
-- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)"
+- Created company.routes.js to guide data and query inputs also defines HTTP commands for backend functionality.
+- Created company.controllers to execute logic required by inputs and queries through models.
+- Creation of these new files' format and syntax is guided by existing API files: PhoneList.js, NewPhone.js, Phone.js and etc.
+- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)" in the require function list
   
 ### 5.2
 
 <img width="601" height="189" alt="image" src="https://github.com/user-attachments/assets/4a66a421-1299-44d1-92ba-0b62ff7be3eb" />
 <img width="1077" height="102" alt="image" src="https://github.com/user-attachments/assets/b85b4375-37f5-42e4-842b-eade87b9bba8" />
 <img width="783" height="409" alt="image" src="https://github.com/user-attachments/assets/01db7bc5-c1fc-45b1-9894-2d74a223ed2b" />
+
 
 ### 5.3
 README is this one seen throughout!
