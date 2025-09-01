@@ -273,11 +273,11 @@ X-Powered-By: Express
 - Accessed frontend/src/components/NewPhone.js
 - Updated NewPhone.js to send phone_number and phone_type to match backend
 
-  ##Front end:
+  *Front end:*
   <img width="463" height="400" alt="image" src="https://github.com/user-attachments/assets/12b30547-1d4b-404d-87d9-a0e636001379" />
-  ##Back end:
+  *Back end:*
   <img width="765" height="373" alt="image" src="https://github.com/user-attachments/assets/5f2ac304-f15a-4644-a494-8ce9e03bfe56" />
-  ##PostgreSQL DB:
+  *PostgreSQL DB:*
   <img width="1008" height="217" alt="image" src="https://github.com/user-attachments/assets/241b8218-c8cc-4a94-b870-a59bd2c43a8a" />
   
 ### 3.4
