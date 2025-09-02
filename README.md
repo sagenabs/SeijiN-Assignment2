@@ -241,33 +241,33 @@ X-Powered-By: Express
 ### 3.1
 - Accessed api/models/contact.model.js
 - Line to update: const Contact = sequelize.define("contact", {...
-- Add: address: { type: Sequelize.STRING}
+- Add: address: {type: Sequelize.STRING}
 - Upon testing, constraints were found in DB as it seemed to be orphaned
   Encountered PostgreSQL sequence conflict with `contacts_id_seq` due to orphaned metadata.
 - Verified that no other relations exist in the DB, confirming the sequence was safe to drop.
-- Dropped sequence manually via `DROP SEQUENCE contacts_id_seq;` inside the DB container.
+- Dropped sequence manually via `DROP SEQUENCE contacts_id_seq;` inside the DB container. (DROP Sequence SQL Commands, 2025)
 - 'Address' feature did not exist in Contacts table
-- Manually inputted by accessing postgresql and typing: ALTER TABLE contacts ADD COLUMN address character varying(255);
+- Manually inputted by accessing postgresql and typing: ALTER TABLE contacts ADD COLUMN address character varying(255); (ALTER TABLE SQL Commands, 2025)
 
 
 ### 3.2
 - Accessed api/models/phone.model.js
 - Line to update: const Phone = sequelize.define("phone", {...
-- Add: phone_type: {type: Sequelize.STRING},
+- Add: phone_type: {type: Sequelize.STRING}, (Model Basics, 2025)
 - Replace 'number' to 'phone_number'
 - Add and renamed database columns to match task requirements:
   - `ALTER TABLE phones ADD COLUMN "phoneType" TO phone_type;`
   - `ALTER TABLE phones RENAME COLUMN "number" TO phone_number;`
 - Updated and added api/models/phone.model.js to use matching name format:
   - Add  `phone_type`  
-  - Update `number` → `phone_number`
+  - Update `number` to `phone_number`
 - Updated api/controllers/phone.controller.js to use matching name format
   
 ### 3.3
 - Accessed frontend/src/components/NewContact.js
 - Line to update: function NewContact(props) {...
 - Add const [address, setAddress] = useState('');
-- Add ', address' to body: JSON.stringify({...
+- Add ', address' to body: JSON.stringify({...  (JSON.stringify(), 2025)
 - Add setAddress(''); to if (data.id) {
 - Add <input type='text' placeholder='Address' onChange={(e) => setAddress(e.target.value)} value={address}/> to return (...
 - Accessed frontend/src/components/NewPhone.js
@@ -376,7 +376,7 @@ X-Powered-By: Express
 - Created company.routes.js to guide data and query inputs also defines HTTP commands for backend functionality.
 - Created company.controllers to execute logic required by inputs and queries through models.
 - Creation of these new files' format and syntax is guided by existing API files: PhoneList.js, NewPhone.js, Phone.js and etc.
-- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)" in the require function list
+- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)" in the require function list (JavaScript Require – How to Use the require() Function in JS, 2025
   
 ### 5.2
 
@@ -403,4 +403,19 @@ README is this one seen throughout!
 
 
 
-### Phone API
+### References
+
+
+ALTER TABLE SQL Commands. (2025, Aug). Retrieved from PostgreSQL: The World's Most Advanced Open Source Relational Database: https://www.postgresql.org/docs/17/sql-altertable.html
+
+
+DROP Sequence SQL Commands. (2025, Aug). Retrieved from PostgreSQL: The World's Most Advanced Open Source Relational Database: https://www.postgresql.org/docs/current/sql-dropsequence.html
+
+
+JSON.stringify(). (2025, Aug). Retrieved from W3 Schools: https://www.w3schools.com/js/js_json_stringify.asp
+
+
+Model Basics. (2025, Aug). Retrieved from Sequelize: https://sequelize.org/docs/v6/core-concepts/model-basics/
+
+
+JavaScript Require – How to Use the require() Function in JS. (2025, Aug). Retrieved from freeCodeCamp: https://www.freecodecamp.org/news/how-to-use-the-javascript-require-function/
