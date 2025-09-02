@@ -376,7 +376,7 @@ X-Powered-By: Express
 - Created company.routes.js to guide data and query inputs also defines HTTP commands for backend functionality.
 - Created company.controllers to execute logic required by inputs and queries through models.
 - Creation of these new files' format and syntax is guided by existing API files: PhoneList.js, NewPhone.js, Phone.js and etc.
-- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)" in the require function list (JavaScript Require – How to Use the require() Function in JS, 2025
+- Integrated company management into main App.js by adding "require("./routes/company.routes")(app)" in the require function list (JavaScript Require – How to Use the require() Function in JS, 2025)
   
 ### 5.2
 
